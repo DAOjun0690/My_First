@@ -11,6 +11,13 @@
 		      $("#cclemom").attr('src','https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/MobiusStrip-01.png/220px-MobiusStrip-01.png');
 		      $("#iii").addClass("animated shake");
     	 }); 
+	$('#shaking').click(function(){
+    if(!$(this).is(":animated")){
+        $(this).animate({top:-8}, 210).animate({top:20}, 180)
+        .animate({top:-4}, 150).animate({top:20}, 130)//是Chaining
+        .animate({top:-2}, 100).animate({top:20}, 80);
+    }
+});
      });
 </script>
   </head>
@@ -69,6 +76,19 @@
     margin-top: 1em;
     padding-top: 1em;
     border-top: thin dotted }
+	      
+#shaking{
+ position:relative;
+ top:20px;
+ left:30px;
+ width:120px;
+ height:120px;
+ background-color:blue;
+ color:white;
+ font-weight:bold;
+ text-align:center;
+    line-height:120px;
+}
       </style>
     
     <div class = "green-background">
@@ -84,11 +104,13 @@
 <p></br>
 <p></br>
 <p></br>
-        <img id = "cclemom" class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://i.imgur.com/VEgC14z.gif">
-  <p></br>     
+
+        <img id = "cclemom" class="smaller-image thick-green-border" alt="Hmm.... " src="https://i.imgur.com/VEgC14z.gif">  
+ <p></br>   
 <font size="30" id="iii">你渴望...乃子嗎?   </font>
 <button id="target1"> Yes，長官</button>
-
+<div id="shaking">Click Me</div>
+ <p></br> 
       <p>三種語言 Three Language:</p>
       <ul>
         <li>繁體中文</li>
