@@ -1,6 +1,18 @@
 <!Doctype>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+	    $("#target1").click(function()
+	    {
+       		$("#iii").css("color", "pink");
+		      $("#cclemom").attr('src','https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/MobiusStrip-01.png/220px-MobiusStrip-01.png');
+		      $("#iii").addClass("animated shake");
+    	 }); 
+     });
+</script>
   </head>
   <body>  
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -8,8 +20,8 @@
         .red-text {
           color: red;
         }
-        .silver-background {
-        background-color: silver;
+        .green-background {
+        background-color: green;
         }
         h2 {
           font-family: Lobster, Monospace;
@@ -30,16 +42,52 @@
         .smaller-image {
           width: 500px;
         }
+        
+        ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black }
+  ul.navbar a {
+    text-decoration: none }
+  a:link {
+    color: blue }
+  a:visited {
+    color: purple }
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
       </style>
     
-    <div class = "silver-background">
+    <div class = "green-background">
+      <!-- 目錄 -->
+<ul class="navbar">
+  <li><a href="index.html">首頁</a>
+  <li><a  id="ccc">連接1</a>
+  <li><a href="town.html">連接2</a>
+  <li><a href="links.html">連接3</a>
+</ul>
       <h2 class="red-text">I Can change The World !</h2>
-
-      <font size="50"><a href="https://embed-ssl.wistia.com/deliveries/bd6d345d2ad253fdbf98f13e1933616525be7205.jpg?image_crop_resized=960x540">how to change231</a></font>
-
-      <a href="#">
-        <img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://i.imgur.com/VEgC14z.gif">
-      </a>
+<p></br>
+<p></br>
+<p></br>
+<p></br>
+        <img id = "cclemom" class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://i.imgur.com/VEgC14z.gif">
+  <p></br>     
+<font size="30" id="iii">你渴望...乃子嗎?   </font>
+<button id="target1"> Yes，長官</button>
 
       <p>三種語言 Three Language:</p>
       <ul>
